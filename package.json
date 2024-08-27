@@ -20,8 +20,8 @@
   ],
   "scripts": {
     "tn": "tn",
-    "test": "vitest",
-    "test:run": "vitest run",
+    "test": "tn test",
+    "test:run": "tn test run",
     "lint": "eslint . && prettier --check .",
     "format": "eslint --fix . && prettier --write .",
     "commit": "cz",
