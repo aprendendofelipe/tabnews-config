@@ -4,7 +4,9 @@
   "description": "Configurações padronizadas dos projetos TabNews",
   "license": "MIT",
   "type": "module",
+  "main": "src/index.js",
   "exports": {
+    ".": "./src/index.js",
     "./eslint": "./src/shared/eslint.config.cjs",
     "./package.json": "./package.json",
     "./prettier": "./src/shared/prettier.config.cjs",
