@@ -6,10 +6,18 @@
   "type": "module",
   "exports": {
     "./eslint": "./src/shared/eslint.config.cjs",
+    "./package.json": "./package.json",
     "./prettier": "./src/shared/prettier.config.cjs",
     "./vitest": "./src/shared/vitest.config.js"
   },
+  "bin": {
+    "tn": "bin/tn.js"
+  },
+  "files": [
+    "src"
+  ],
   "scripts": {
+    "tn": "tn",
     "test": "vitest",
     "test:run": "vitest run",
     "lint": "eslint . && prettier --check .",
@@ -37,6 +45,7 @@
     "@next/eslint-plugin-next": "14.2.6",
     "@vitejs/plugin-react": "4.3.1",
     "@vitest/coverage-v8": "2.0.5",
+    "commander": "12.1.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.6.1",

@@ -20,6 +20,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: 2.0.5
         version: 2.0.5(vitest@2.0.5(@types/node@22.5.0)(jsdom@24.1.1))
+      commander:
+        specifier: 12.1.0
+        version: 12.1.0
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -602,6 +605,7 @@ packages:
 
   '@tabnews/config@file:':
     resolution: {directory: '', type: directory}
+    hasBin: true
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -3416,6 +3420,7 @@ snapshots:
       '@next/eslint-plugin-next': 14.2.6
       '@vitejs/plugin-react': 4.3.1(vite@5.4.2(@types/node@22.5.0))
       '@vitest/coverage-v8': 2.0.5(vitest@2.0.5(@types/node@22.5.0)(jsdom@24.1.1))
+      commander: 12.1.0
       eslint: 8.57.0
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
