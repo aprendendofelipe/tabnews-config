@@ -6,9 +6,12 @@
   "type": "module",
   "exports": {
     "./eslint": "./src/shared/eslint.config.cjs",
-    "./prettier": "./src/shared/prettier.config.cjs"
+    "./prettier": "./src/shared/prettier.config.cjs",
+    "./vitest": "./src/shared/vitest.config.js"
   },
   "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
     "lint": "eslint . && prettier --check .",
     "format": "eslint --fix . && prettier --write .",
     "commit": "cz",
@@ -32,6 +35,8 @@
   "dependencies": {
     "@eslint/js": "9.9.0",
     "@next/eslint-plugin-next": "14.2.6",
+    "@vitejs/plugin-react": "4.3.1",
+    "@vitest/coverage-v8": "2.0.5",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.6.1",
@@ -44,7 +49,10 @@
     "eslint-plugin-vitest": "0.5.4",
     "eslint-plugin-vitest-globals": "1.5.0",
     "globals": "15.9.0",
-    "prettier": "3.3.3"
+    "jsdom": "24.1.1",
+    "prettier": "3.3.3",
+    "vite-tsconfig-paths": "5.0.1",
+    "vitest": "2.0.5"
   },
   "devDependencies": {
     "@commitlint/cli": "19.4.0",
