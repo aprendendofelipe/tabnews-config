@@ -1,0 +1,13 @@
+{
+  "name": "@tabnews/config",
+  "version": "0.0.1",
+  "description": "Configurações padronizadas dos projetos TabNews",
+  "license": "MIT",
+  "author": "Turma do TabNews",
+  "repository": "aprendendofelipe/tabnews_config",
+  "keywords": [
+    "cli",
+    "config",
+    "tabnews"
+  ]
+}
