@@ -59,6 +59,7 @@ module.exports = [
       ...pluginPrimerReact.configs.recommended.rules,
       ...pluginReact.configs.flat.recommended.rules,
       ...pluginReactHooks.configs.recommended.rules,
+      '@next/next/no-html-link-for-pages': 0,
       'import/newline-after-import': 'error',
       'import/no-duplicates': 'error',
       'import/no-useless-path-segments': [
