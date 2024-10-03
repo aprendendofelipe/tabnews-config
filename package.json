@@ -1,6 +1,6 @@
 {
   "name": "@tabnews/config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Configurações padronizadas dos projetos TabNews",
   "license": "MIT",
   "type": "module",
