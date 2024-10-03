@@ -17,9 +17,15 @@ export async function test(options = {}) {
 
   const args = getArgs(options);
 
-  (options.spawn || spawn)('npx', args, {
+  const child = (options.spawn || spawn)('npx', args, {
     stdio: 'inherit',
     shell: true,
+  });
+
+  child.on('close', (code) => {
+    if (code !== 0) {
+      process.exit(code);
+    }
   });
 }
 

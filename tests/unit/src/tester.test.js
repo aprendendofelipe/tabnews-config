@@ -51,6 +51,16 @@ describe('tester', () => {
     expect(spawn).toHaveBeenCalledOnce();
   });
 
+  it('should exit with non-zero code if child process exits with a non-zero code', async () => {
+    const on = vi.fn((_, cb) => cb(1));
+    const spawn = vi.fn(() => ({ on }));
+    vi.spyOn(process, 'exit').mockImplementation(() => {});
+
+    await test({ spawn });
+
+    expect(process.exit).toHaveBeenCalledWith(1);
+  });
+
   describe('checkEnvMode', () => {
     beforeAll(() => {
       vi.spyOn(question, 'ask');
