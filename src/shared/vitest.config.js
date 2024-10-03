@@ -10,7 +10,6 @@ export default function createConfig(customConfig) {
         test: {
           globals: true,
           fileParallelism: false,
-          isolate: false,
           testTimeout: 60_000,
           hookTimeout: 30_000,
         },
