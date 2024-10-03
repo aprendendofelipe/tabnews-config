@@ -3,21 +3,17 @@ on:
     branches:
       - main
 name: Release
-permissions: {}
 
 jobs:
   release-please:
-    name: Please
+    name: Please PR
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
 
     steps:
       - uses: googleapis/release-please-action@v4
         id: release-please
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{secrets.RELEASE_PLEASE_GITHUB_TOKEN}}
           release-type: node
 
     outputs:
