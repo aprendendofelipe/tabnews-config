@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.0](https://github.com/aprendendofelipe/tabnews-config/compare/v0.0.1...v0.1.0) (2024-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vitest:** change 'isolate' to default option
+
+### Features
+
+* **vitest:** change 'isolate' to default option ([16fa010](https://github.com/aprendendofelipe/tabnews-config/commit/16fa01041efa02babed2138524155d1d38fcaba1))
+
+
+### Bug Fixes
+
+* handle non-zero exit code in test function ([ef1001e](https://github.com/aprendendofelipe/tabnews-config/commit/ef1001ef7b6365573dfcea3d795424615afb79df))
+
 ## 0.0.1 (2024-10-03)
 
 
