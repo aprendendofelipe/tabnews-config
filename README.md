@@ -1,5 +1,7 @@
 # TabNews Config
 
+> Essa versão beta só implementa o comando `tn test`. Ainda não possui os demais comandos.
+
 Ferramenta para configurar um ambiente de desenvolvimento e testes com as mesmas configurações utilizadas no TabNews, incluindo:
 
 - CLI do TabNews
