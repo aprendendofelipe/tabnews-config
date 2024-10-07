@@ -22,7 +22,7 @@
     "tn": "tn",
     "test": "tn test",
     "test:run": "tn test run",
-    "lint": "eslint . && prettier --check .",
+    "lint": "eslint . --max-warnings 0 && prettier --check .",
     "format": "eslint --fix . && prettier --write .",
     "commit": "cz",
     "prepare": "husky",
@@ -30,7 +30,7 @@
   },
   "lint-staged": {
     "*.{js,mjs,cjs,jsx}": [
-      "eslint --fix",
+      "eslint --fix --max-warnings 0",
       "prettier --write"
     ],
     "*.{json,md}": [
