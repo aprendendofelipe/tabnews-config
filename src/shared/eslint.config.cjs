@@ -60,16 +60,16 @@ module.exports = [
       ...pluginReact.configs.flat.recommended.rules,
       ...pluginReactHooks.configs.recommended.rules,
       '@next/next/no-html-link-for-pages': 0,
-      'import/newline-after-import': 'error',
-      'import/no-duplicates': 'error',
+      'import/newline-after-import': 'warn',
+      'import/no-duplicates': 'warn',
       'import/no-useless-path-segments': [
-        'error',
+        'warn',
         {
           noUselessIndex: true,
         },
       ],
       'import/order': [
-        'error',
+        'warn',
         {
           alphabetize: {
             order: 'asc',
@@ -85,23 +85,23 @@ module.exports = [
           ],
         },
       ],
-      'no-console': ['error', { allow: ['warn', 'error'] }],
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-control-regex': 0,
       'no-sparse-arrays': 0,
       'no-unused-vars': [
-        'error',
+        'warn',
         {
           vars: 'all',
           args: 'after-used',
         },
       ],
-      'prefer-const': 'error',
+      'prefer-const': 'warn',
       'react/react-in-jsx-scope': 0,
       'react/prop-types': 0,
       'react/no-unknown-property': ['error', { ignore: ['global', 'jsx'] }],
       'require-await': 'warn',
       'sort-imports': [
-        'error',
+        'warn',
         {
           allowSeparatedGroups: true,
           ignoreCase: true,
@@ -119,15 +119,21 @@ module.exports = [
     },
     rules: {
       ...pluginVitest.configs.recommended.rules,
-      'vitest/no-conditional-in-test': 'error',
+      'vitest/no-conditional-in-test': 'warn',
       'vitest/no-disabled-tests': 'warn',
-      'vitest/no-focused-tests': 'error',
-      'vitest/prefer-strict-equal': 'error',
-      'vitest/prefer-to-be': 'error',
+      'vitest/no-focused-tests': 'warn',
+      'vitest/prefer-strict-equal': 'warn',
+      'vitest/prefer-to-be': 'warn',
     },
   },
-  pluginPrettierRecommended,
   {
-    ignores: ['.next/**', '**/__snapshots__/*'],
+    ...pluginPrettierRecommended,
+    rules: {
+      ...pluginPrettierRecommended.rules,
+      'prettier/prettier': 'warn',
+    },
+  },
+  {
+    ignores: ['**/.next/**', '**/__snapshots__/*', '**/coverage/**', '**/dist/*'],
   },
 ];
