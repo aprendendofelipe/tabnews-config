@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.2.0](https://github.com/aprendendofelipe/tabnews-config/compare/v0.1.0...v0.2.0) (2024-10-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eslint:** need to add `--max-warnings 0` when running `eslint` to fail these rules
+
+### Features
+
+* **lint-staged:** add `lint-staged` configuration file ([d3734cb](https://github.com/aprendendofelipe/tabnews-config/commit/d3734cb99b103f250444773e5132509704fa67aa))
+
+
+### Styles
+
+* **eslint:** changes some style-only rules to warn level ([3211863](https://github.com/aprendendofelipe/tabnews-config/commit/3211863b6fdc07c977a5883fa5083398ac2f614d))
+
 ## [0.1.0](https://github.com/aprendendofelipe/tabnews-config/compare/v0.0.1...v0.1.0) (2024-10-03)
 
 
