@@ -8,6 +8,7 @@
   "exports": {
     ".": "./src/index.js",
     "./eslint": "./src/shared/eslint.config.cjs",
+    "./lint-staged": "./src/shared/lint-staged.cjs",
     "./package.json": "./package.json",
     "./prettier": "./src/shared/prettier.config.cjs",
     "./vitest": "./src/shared/vitest.config.js"
@@ -27,15 +28,6 @@
     "commit": "cz",
     "prepare": "husky",
     "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,mjs,cjs,jsx}": [
-      "eslint --fix --max-warnings 0",
-      "prettier --write"
-    ],
-    "*.{json,md}": [
-      "prettier --write"
-    ]
   },
   "config": {
     "commitizen": {
