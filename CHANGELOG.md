@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.8.0](https://github.com/aprendendofelipe/barso/compare/barso-v0.7.1...barso-v0.8.0) (2026-09-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* require Node.js >= 22.13.0 and migrate to Vitest 5.
+
+### Features
+
+* migrate to vitest 5 and update dependencies ([064c004](https://github.com/aprendendofelipe/barso/commit/064c004cbc2c3958951ad8910e3ce788cdd53f53))
+
 ## [0.7.1](https://github.com/aprendendofelipe/barso/compare/barso-v0.7.0...barso-v0.7.1) (2026-07-26)
 
 
